@@ -1,7 +1,8 @@
-# Peoples-trimet
+# Peoples-TriMet
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Epicodus Ember Project Week
+
+Alert other riders to issues on TriMet trains and buses. Add an issue or alert to a line and other users can view this information on a map to make decisions about their trip.
 
 ## Prerequisites
 
@@ -50,4 +51,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
