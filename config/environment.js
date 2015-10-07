@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'peoples-trimet',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://peoples-trimet.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
