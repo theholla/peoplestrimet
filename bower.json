@@ -12,6 +12,11 @@
     "jquery": "^1.11.3",
     "loader.js": "ember-cli/loader.js#3.2.1",
     "qunit": "~1.18.0",
+<<<<<<< HEAD
     "moment": "~2.10.6"
+=======
+    "firebase": "^2.1.0",
+    "bootstrap": "~3.3.2"
+>>>>>>> 83cf092a78590c55b271ca9a744b52317ea897fe
   }
 }
