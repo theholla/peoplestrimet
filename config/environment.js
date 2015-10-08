@@ -5,6 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'peoples-trimet',
     environment: environment,
     contentSecurityPolicy: {
+
        'default-src': "'none'",
        'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com https://*.googleapis.com https://*.gstatic.com",
        'font-src': "'self' https://*.gstatic.com",
