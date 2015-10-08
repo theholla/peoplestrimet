@@ -3,15 +3,18 @@
 <div>
   <form>
     <div class="form-group">
-      <label for="line">Line: </label>
-      {{input value=line id="line"}}
+      <label for="line">Select a Line:</label>
+      {{view "select" content=lines
+      optionValuePath="content.lineName"
+      optionLabelPath="content.lineName"
+      value=selectedLine}}
     </div>
-  <br>
+    <br>
     <div class="form-group">
       <label for="issue">Issue: </label>
       {{input value=issue id="issue"}}
     </div>
-  <br>
+    <br>
     <div class="form-group">
       <label for="location">Location: </label>
       {{input value=location id="location"}}
