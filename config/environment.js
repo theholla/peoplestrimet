@@ -4,7 +4,18 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'peoples-trimet',
     environment: environment,
-    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+            'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com",
+            'font-src': "'self'",
+            'connect-src': "'self' wss://*.firebaseio.com",
+            'img-src': "'self' *",
+            'style-src': "'self' 'unsafe-inline'",
+            'frame-src': "'self' https://*.firebaseio.com",
+            'report-uri':"'self' http://0.0.0.0:4200/csp-report",
+            'blocked-uri':"'self' http://www.mapmash.in"
+
+      },
     firebase: 'https://peoples-trimet.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',

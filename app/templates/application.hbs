@@ -1,2 +1,46 @@
+<header>
+  <nav class="mast-wrapper wrapper">
+    <div class="mast-logo">
+      <h1>
+        People's TriMet
+      </h1>
+    </div>
 
+    <div class="mast-menu menu">
+      <div class="menu-content">
+        <ul class="menu-list" role="tree">
+          <li class="menu-item menu-item-link">
+            <a href="http://localhost:4200/about">
+              <h3 class="menu-item-main">About</h3>
+            </a>
+          </li>
+
+          <li class="menu-item menu-item-link">
+            <a href="http://localhost:4200/contact">
+              <h3 class="menu-item-main">Contact</h3>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+</header>
+
+
+
+<div class="container">
 {{outlet}}
+</div>
+
+<footer>
+  <p class="text-center">
+    Copyright © 2015
+    {{#link-to 'index'}}Home{{/link-to}}
+  </p>
+
+
+</footer>
