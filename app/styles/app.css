@@ -2,8 +2,23 @@
     margin-top: 3.75em;
 }
 
+h2 {
+  color: blue;
+}
+
+.nav-pills {
+  float: right;
+  margin-right: 98px;
+}
+
+header {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 0px;
+}
+
 form input.submit {
-  padding: .25em 1.25em .25em 1.25em;
+    padding: .25em 1.25em .25em 1.25em;
     border: .05em solid #2e2d2a;
     background-color: #6db33f;
     cursor: pointer;
@@ -11,63 +26,4 @@ form input.submit {
     font-weight: bold;
     margin: 0 0 1em 0;
     float: left;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-.main form.triptools-form input.submit {
-    margin-bottom: 0;
-}
-
-.menu-list {
-    padding: 0 10px;
-}
-
-ul {
-    list-style: none;
-}
-
-li.menu-item.menu-item-link {
-    list-style: none;
-}
-
-.link, a {
-  text-decoration:none;
-}
-
-.mast {
-    position: relative;
-    display: block;
-    width: 100%;
-    color: #eee;
-    background-color: #084c8d;
-    transition-property: background-color,box-shadow,border;
-    transition-duration: 0s;
-    transfrom:translate3d(0,0,0);
-    backface-visibility: hidden;
-    box-shadow: rgba(0,0,0,0)0 0 1px;
-}
-
-.mast-wrapper {
-    max-width: 1160px;
-}
-
-.wrapper {
-  margin:0 auto;
-}
-
-.menu {
-    font-family: Hind,Helvetica,Arial,sans-serif;
-}
-
-.menu-item-main {
-    display: inline-block;
-    line-height: 18px;
-    font-size: 15px;
-    font-weight: 400;
-    font-family: Hind,Helvetica,Arial,sans-serif;
-    padding-bottom: 0;
 }

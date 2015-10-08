@@ -13,7 +13,7 @@ module.exports = function(environment) {
             'style-src': "'self' 'unsafe-inline'",
             'frame-src': "'self' https://*.firebaseio.com",
             'report-uri':"'self' http://0.0.0.0:4200/csp-report",
-            'blocked-uri':"'self' http://www.mapmash.in"
+            'blocked-uri':"'self' http://www.mapmash.in",
 
       },
     firebase: 'https://peoples-trimet.firebaseio.com/',
