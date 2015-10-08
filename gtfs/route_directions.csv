@@ -1,0 +1,11 @@
+route_id,direction_id,direction_name
+90,0,To Portland International Airport
+90,1,To Beaverton Transit Center
+100,0,To Gresham
+100,1,To Hillsboro
+190,0,To Expo Center
+190,1,To Portland City Center
+200,0,To Clackamas Town Center
+200,1,To Portland City Center/PSU
+290,0,To Portland City Center
+290,1,To Milwaukie

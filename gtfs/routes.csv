@@ -1,0 +1,6 @@
+route_id,agency_id,route_short_name,route_long_name,route_type,route_url,route_sort_order
+90,TRIMET,,MAX Red Line,0,http://trimet.org/schedules/r090.htm,120
+100,TRIMET,,MAX Blue Line,0,http://trimet.org/schedules/r100.htm,100
+190,TRIMET,,MAX Yellow Line,0,http://trimet.org/schedules/r190.htm,130
+200,TRIMET,,MAX Green Line,0,http://trimet.org/schedules/r200.htm,110
+290,TRIMET,,MAX Orange Line,0,http://trimet.org/schedules/r290.htm,115
