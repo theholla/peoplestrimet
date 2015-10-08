@@ -1,39 +1,29 @@
 <header>
   <nav class="mast-wrapper wrapper">
     <div class="mast-logo">
-      <h1>
+      <h2>
         People's TriMet
-      </h1>
+      </h2>
     </div>
+    <div class="navbar">
+      <ul class="nav nav-pills">
+        <li class="nav nav-pills">
+          <a href="http://localhost:4200/about">About</a>
+        </li>
 
-    <div class="mast-menu menu">
-      <div class="menu-content">
-        <ul class="menu-list" role="tree">
-          <li class="menu-item menu-item-link">
-            <a href="http://localhost:4200/about">
-              <h3 class="menu-item-main">About</h3>
-            </a>
-          </li>
+        <li class="nav nav-pills">
+          <a href="http://localhost:4200/about">Contact</a>
+        </li>
 
-          <li class="menu-item menu-item-link">
-            <a href="http://localhost:4200/contact">
-              <h3 class="menu-item-main">Contact</h3>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
+      </ul>
     </div>
-
   </nav>
 </header>
 
 
 
 <div class="container">
-{{outlet}}
+  {{outlet}}
 </div>
 
 <footer>
