@@ -1,0 +1,28 @@
+{{#if addNewAlert}}
+<h1>New Alert</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="line">Select a Line:</label>
+      {{view "select" content=lines
+      optionValuePath="content.lineName"
+      optionLabelPath="content.lineName"
+      value=selectedLine}}
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="issue">Issue: </label>
+      {{input value=issue id="issue"}}
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="location">Location: </label>
+      {{input value=location id="location"}}
+    </div>
+    <br>
+    <button {{action 'saveAlert'}}>Save</button>
+  </form>
+</div>
+{{else}}
+<button class="btn btn-warning"{{action 'alertFormShow'}}>Post Alert</button>
+{{/if}}

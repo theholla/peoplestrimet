@@ -5,15 +5,14 @@ module.exports = function(environment) {
     modulePrefix: 'peoples-trimet',
     environment: environment,
     contentSecurityPolicy: {
-      'default-src': "'none'",
-            'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com",
-            'font-src': "'self'",
-            'connect-src': "'self' wss://*.firebaseio.com",
-            'img-src': "'self' *",
-            'style-src': "'self' 'unsafe-inline'",
-            'frame-src': "'self' https://*.firebaseio.com",
-            'report-uri':"'self' http://0.0.0.0:4200/csp-report",
-            'blocked-uri':"'self' http://www.mapmash.in",
+
+       'default-src': "'none'",
+       'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com https://*.googleapis.com https://*.gstatic.com",
+       'font-src': "'self' https://*.gstatic.com",
+       'connect-src': "'self' wss://*.firebaseio.com",
+       'img-src': "'self' *",
+       'style-src': "'self' 'unsafe-inline' https://*.googleapis.com",
+       'frame-src': "'self' https://*.firebaseio.com"
 
       },
     firebase: 'https://peoples-trimet.firebaseio.com/',
