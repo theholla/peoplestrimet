@@ -1,4 +1,10 @@
 <iframe src="http://mapmash.googlepages.com/pdxmax.html" style="border:0px; width:800px; height:400px"></iframe>
 <br>
 <br>
+
+<ul>
+{{#each model as |alert|}}
+{{alert-tile alert=alert}}
+{{/each}}
+</ul>
 {{new-alert saveAlert="saveAlert"}}

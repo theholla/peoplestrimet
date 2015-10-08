@@ -10,7 +10,6 @@ export default Ember.Component.extend({
   {lineName: "MAX Orange Line"},
   {lineName: "MAX Yellow Line"}
 ],
-
   actions: {
     alertFormShow() {
       this.set('addNewAlert',true);
