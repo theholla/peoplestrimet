@@ -19,10 +19,12 @@ export default Ember.Component.extend({
       var params = {
         line: this.get('selectedLine'),
         issue: this.get('issue'),
-        location: this.get('selectedStop'),
+        location: this.get('selectedStop.stop_name'),
         active: true,
         time_added: moment().format('llll'),
-        comments: [""]
+        comments: [""],
+        latitude: this.get('selectedStop.stop_lat'),
+        longitude:this.get('selectedStop.stop_lon')
       };
       this.set('addNewAlert',false);
       this.sendAction('saveAlert',params);
