@@ -1,16 +1,15 @@
 <header>
   <nav class="mast-wrapper wrapper">
     <div class="mast-logo">
-      <h2>
+      <h2 class="logo">
         {{#link-to 'index'}}People's TriMet{{/link-to}}
       </h2>
     </div>
     <div class="navbar">
-      <ul class="nav nav-pills">
+      <ul class="nav nav-pills right">
         <li class="nav nav-pills">
           {{#link-to 'index'}}About{{/link-to}}
         </li>
-
         <li class="nav nav-pills">
           {{#link-to 'index'}}Contact{{/link-to}}
         </li>
@@ -20,17 +19,14 @@
   </nav>
 </header>
 
-
-
+<body>
 <div class="container">
   {{outlet}}
 </div>
+</body>
 
 <footer>
   <p class="text-center">
     Copyright © 2015
-    {{#link-to 'index'}}Home{{/link-to}}
   </p>
-
-
 </footer>

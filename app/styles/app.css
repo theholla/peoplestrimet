@@ -3,20 +3,20 @@
     margin-top: 3.75em;
 }
 
-h2 {
-  color: blue;
-}
+.logo {
+  background-color: #000080;
+  color: white;}
 
-.nav-pills {
+.right {
   float: right;
-  margin-right: 98px;
-}
+  margin-right: 98px;}
 
 header {
   padding-top: 20px;
   padding-left: 20px;
   padding-bottom: 0px;
-}
+  font-family: 'Asul', sans-serif;
+  text-transform: uppercase;}
 
 form input.submit {
     padding: .25em 1.25em .25em 1.25em;
