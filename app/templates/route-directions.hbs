@@ -1,5 +1,13 @@
+North Bound
 <ul>
-  {{#each model as |model|}}
+  {{#each model.north as |model|}}
+  <li>{{model.direction_name}}</li>
+  {{/each}}
+</ul>
+
+South Bound
+<ul>
+  {{#each model.south as |model|}}
   <li>{{model.direction_name}}</li>
   {{/each}}
 </ul>
