@@ -19,7 +19,7 @@ export default Ember.Component.extend({
       var params = {
         line: this.get('selectedLine'),
         issue: this.get('issue'),
-        location: this.get('location'),
+        location: this.get('selectedStop'),
         active: true,
         time_added: moment().format('llll'),
         comments: [""]
