@@ -2,9 +2,9 @@
 <br>
 <br>
 
-{{#each model as |alert|}}
+{{#each model.alerts as |alert|}}
 {{alert-tile alert=alert}}
 {{/each}}
 
 
-{{new-alert saveAlert="saveAlert"}}
+{{new-alert stops=model.maxstops saveAlert="saveAlert"}}

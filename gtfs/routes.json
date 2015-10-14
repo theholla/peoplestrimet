@@ -1,0 +1,47 @@
+[
+  {
+    "route_id":90,
+    "agency_id":"TRIMET",
+    "route_short_name":"",
+    "route_long_name":"MAX Red Line",
+    "route_type":"0",
+    "route_url":"http://trimet.org/schedules/r090.htm",
+    "route_sort_order":120
+  },
+  {
+    "route_id":100,
+    "agency_id":"TRIMET",
+    "route_short_name":"",
+    "route_long_name":"MAX Blue Line",
+    "route_type":"0",
+    "route_url":"http://trimet.org/schedules/r100.htm",
+    "route_sort_order":100
+  },
+  {
+    "route_id":190,
+    "agency_id":"TRIMET",
+    "route_short_name":"",
+    "route_long_name":"MAX Yellow Line",
+    "route_type":"0",
+    "route_url":"http://trimet.org/schedules/r190.htm",
+    "route_sort_order":130
+  },
+  {
+    "route_id":200,
+    "agency_id":"TRIMET",
+    "route_short_name":"",
+    "route_long_name":"MAX Green Line",
+    "route_type":"0",
+    "route_url":"http://trimet.org/schedules/r200.htm",
+    "route_sort_order":110
+  },
+  {
+    "route_id":290,
+    "agency_id":"TRIMET",
+    "route_short_name":"",
+    "route_long_name":"MAX Orange Line",
+    "route_type":"0",
+    "route_url":"http://trimet.org/schedules/r290.htm",
+    "route_sort_order":115
+  }
+]
