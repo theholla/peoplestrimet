@@ -4,6 +4,7 @@ export default Ember.Component.extend({
   addNewAlert: false,
   selectedLine: "",
   lines: [
+  {lineName: "Choose MAX Line"},
   {lineName: "MAX Blue Line"},
   {lineName: "MAX Red Line"},
   {lineName: "MAX Green Line"},

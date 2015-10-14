@@ -1,10 +1,12 @@
 import Ember from 'ember';
 import Stopadapter from 'peoples-trimet/adapters/stops';
 
+import delay from 'ember-delay/delay';
 
 export default Ember.Route.extend({
 
   model: function() {
+<<<<<<< HEAD
     var stops = Stopadapter.create();
 
     return Ember.RSVP.hash({
@@ -17,10 +19,23 @@ export default Ember.Route.extend({
 
       })
     },
+=======
+    return this.store.find('alert', {
+      orderBy: 'line'
+    });
+  },
+>>>>>>> 984e005dac3769dae20c6ead8ad91e558f485b3a
+
+  alertDelay: function(alert) {
+    return delay(7200000).then(function() {
+        alert.destroyRecord();
+  });
+},
 
   actions: {
     saveAlert(params) {
       var newAlert = this.store.createRecord('alert',params);
+      this.alertDelay(newAlert);
       newAlert.save();
     }
   }
