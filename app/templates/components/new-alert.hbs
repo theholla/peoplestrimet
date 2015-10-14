@@ -11,6 +11,13 @@
     </div>
     <br>
     <div class="form-group">
+      <label for="stop">Select a Stop:</label>
+      {{view "select" content=stops
+      optionValuePath="content.stop_name"
+      optionLabelPath="content.stop_name"
+      value=selectedStop}}
+    </div>
+    <div class="form-group">
       <label for="issue">Issue: </label>
       {{input value=issue id="issue"}}
     </div>
