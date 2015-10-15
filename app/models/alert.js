@@ -6,5 +6,7 @@ export default DS.Model.extend({
   issue: DS.attr(),
   location: DS.attr(),
   comments: DS.attr(),
-  time_added: DS.attr()
+  time_added: DS.attr(),
+  latitude: DS.attr('number'),
+  longitude: DS.attr('number')
 });
