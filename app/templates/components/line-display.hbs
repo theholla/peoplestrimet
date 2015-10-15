@@ -7,8 +7,12 @@
 </div>
 
 {{#if viewLine}}
-  {{#each activeLine as |alert|}}
-    {{alert-tile alert=alert}}
-{{/each}}
+<ul id="alertList" class="group">
+  <li>
+    {{#each activeLine as |alert|}}
+      {{alert-tile alert=alert}}
+    {{/each}}
+  </li>
+</ul>
 <div class="button pointer" {{action 'hideAlerts'}}>Hide</div>
 {{/if}}

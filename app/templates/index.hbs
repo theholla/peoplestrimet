@@ -5,10 +5,12 @@
 {{new-alert stops=model.maxstops saveAlert="saveAlert"}}
 
 <hr>
-<ul id="alertList" class="group">
-  <li>
-    {{#each model.alerts as |alert|}}
-    {{alert-tile alert=alert}}
-    {{/each}}
-  </li>
-</ul>
+<section id="main" class="main">
+  <ul id="alertList" class="group">
+    <li>
+      {{#each model.alerts as |alert|}}
+      {{alert-tile alert=alert}}
+      {{/each}}
+    </li>
+  </ul>
+</section>
