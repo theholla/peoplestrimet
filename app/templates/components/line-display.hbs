@@ -1,0 +1,14 @@
+<button {{action 'viewYellow'}}> Alerts on the Yellow line.</button>
+<button {{action 'viewGreen'}}> Alerts on the Green line.</button>
+<button {{action 'viewBlue'}}> Alerts on the Blue line.</button>
+<button {{action 'viewRed'}}> Alerts on the Red line.</button>
+<button {{action 'viewOrange'}}> Alerts on the Orange line.</button>
+
+
+
+{{#if viewLine}}
+{{#each activeLine as |alert|}}
+{{alert-tile alert=alert}}
+{{/each}}
+<button {{action 'hideAlerts'}}>Hide</button>
+{{/if}}
