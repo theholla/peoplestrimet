@@ -48,7 +48,7 @@ ul {
   font-family: 'Asul', sans-serif;
   color: white;
   background-color: #73b844;
-  border-radius: 8px;
+  border-radius: 2px;
   border: 1px solid grey;
   font-size: 20px;}
 
@@ -56,6 +56,37 @@ ul {
     color: white;
     background-color: #62A038;
     text-decoration: none;  }
+
+.blockbutton {
+  text-align: center;
+  font-family: 'Asul', sans-serif;
+  font-size: 15px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.red {
+  background-color: #D31F43;
+}
+
+.blue {
+  background-color: #0F6AAC;
+}
+
+.green {
+  background-color: #028953;
+}
+
+.yellow {
+  background-color: #FFC524;
+}
+
+.orange {
+  background-color: #D25D13;
+}
 
   div.mapbutton {
     max-height: 30px;  }

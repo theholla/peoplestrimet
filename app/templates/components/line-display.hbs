@@ -1,10 +1,8 @@
-<button {{action 'viewYellow'}}> Alerts on the Yellow line.</button>
-<button {{action 'viewGreen'}}> Alerts on the Green line.</button>
-<button {{action 'viewBlue'}}> Alerts on the Blue line.</button>
-<button {{action 'viewRed'}}> Alerts on the Red line.</button>
-<button {{action 'viewOrange'}}> Alerts on the Orange line.</button>
-
-
+  <div class="blockbutton pointer red" {{action 'viewRed'}}> Red Line Alerts</div>
+  <div class="blockbutton pointer orange" {{action 'viewOrange'}}> Orange Line Alerts</div>
+  <div class="blockbutton pointer yellow" {{action 'viewYellow'}}> Yellow Line Alerts</div>
+  <div class="blockbutton pointer green" {{action 'viewGreen'}}> Green Line Alerts</div>
+  <div class="blockbutton pointer blue" {{action 'viewBlue'}}> Blue Line Alerts</div>
 
 {{#if viewLine}}
 {{#each activeLine as |alert|}}
