@@ -9,14 +9,29 @@ export default Ember.Route.extend({
     var stops = Stopadapter.create();
 
     return Ember.RSVP.hash({
-      alerts: this.store.find('alert', {
+      alerts: this.store.findAll('alert', {
         orderBy: 'line'
         }),
       maxstops: stops.find().then(function(data) {
         return data.filterBy('location_type', '1');
-        })
-
+      }),
+      yellowalerts: this.store.findAll('alert').then(function(data){
+        return data.filterBy('line','MAX Yellow Line');
+      }),
+      bluealerts: this.store.findAll('alert').then(function(data){
+        return data.filterBy('line','MAX Blue Line');
+      }),
+      redalerts: this.store.findAll('alert').then(function(data){
+        return data.filterBy('line','MAX Red Line');
+      }),
+      orangealerts: this.store.findAll('alert').then(function(data){
+        return data.filterBy('line','MAX Orange Line');
+      }),
+      greenalerts: this.store.findAll('alert').then(function(data){
+        return data.filterBy('line','MAX Green Line');
       })
+
+    });
     },
 
   alertDelay: function(alert) {

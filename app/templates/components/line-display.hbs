@@ -1,5 +1,8 @@
 {{#if viewLine}}
 Here is where I will list the alerts for a given line.
+{{#each alerts as |alert|}}
+{{alert-tile alert=alert}}
+{{/each}}
 {{else}}
 <button {{action 'viewAlerts'}}> Alerts on the {{line}} line.</button>>
 {{/if}}
