@@ -18,6 +18,43 @@ header {
   font-family: 'Asul', sans-serif;
   text-transform: uppercase;}
 
+.pointer {
+  cursor: pointer;}
+
+.button {
+  width: 20%;
+  float: right;
+  margin-right: 1px;
+  text-align: center;
+  font-family: 'Asul', sans-serif;
+  color: white;
+  background-color: #73b844;
+  border-radius: 8px;
+  border: 1px solid grey;
+  font-size: 20px;}
+
+  .button:hover {
+    color: white;
+    background-color: #62A038;
+    text-decoration: none;  }
+
+.form {
+  background-color: #f9f9f9;
+  border: 2px solid #73b844;
+  padding: 20px;
+  margin: 20px;
+  max-width: 540px;}
+
+  .formemphasis {
+    font-size: 40px;
+    font-family: 'Asul', sans-serif;
+    margin-bottom: 10px;  }
+
+  .formq {
+    font-size: 30px;
+    font-family: 'Asul', sans-serif;
+    margin-bottom: 10px;  }
+
 form input.submit {
     padding: .25em 1.25em .25em 1.25em;
     border: .05em solid #2e2d2a;

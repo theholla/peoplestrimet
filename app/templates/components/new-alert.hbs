@@ -1,35 +1,29 @@
 {{#if addNewAlert}}
-<h1>New Alert</h1>
-<p>
-  Reminder: New alerts will expire after 2 hours.
-</p>
-<br>
-<div>
+<div class="form">
   <form>
     <div class="form-group">
-      <label for="line">Select a Line:</label>
+      <label for="line"><span class="formemphasis">Select a Line:</span></label><br>
       {{view "select" content=lines
       optionValuePath="content.lineName"
       optionLabelPath="content.lineName"
       value=selectedLine}}
     </div>
-    <br>
     <div class="form-group">
-      <label for="stop">Select a Stop:</label>
+      <label for="stop"><span class="formq">Select a Stop:</span></label>
       {{view "select" content=stops
       optionValuePath="content"
       optionLabelPath="content.stop_name"
       value=selectedStop}}
     </div>
     <div class="form-group">
-      <label for="issue">Issue: </label>
-      {{input value=issue id="issue"}}
+      <label for="issue"><span class="formq">Issue:</span></label>
+      {{textarea value=issue id="issue" cols="66" placeholder="New alerts expire in two hours."}}
     </div>
     <br>
-    
-    <button {{action 'saveAlert'}}>Save</button>
+
+    <div class="button pointer" {{action 'saveAlert'}}>Save</div>
   </form>
 </div>
 {{else}}
-<button class="btn btn-warning"{{action 'alertFormShow'}}>Post Alert</button>
+<div class="button pointer" {{action 'alertFormShow'}}>Post Alert</div>
 {{/if}}
