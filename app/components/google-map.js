@@ -45,7 +45,7 @@ export default Ember.Component.extend({
         var marker = new google.maps.Marker({
           position: new google.maps.LatLng(lat, lng),
           map: myMap,
-
+          icon: 'http://maps.google.com/mapfiles/kml/pal3/icon33.png',
           infowindow: infowindow
         });
         marker.setMap(myMap);
