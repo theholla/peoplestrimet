@@ -1,12 +1,4 @@
-<div class="button pointer mapbutton" {{action "showMap" alert}}>
-  Show Map
-  <div class="map-display"></div>
-</div>
+<button {{action "showMap" alerts}} class="btn btn-sm btn-primary">Show Map</button>
 
-<!-- {{#each alerts as |alert|}}
-  {{alert.line}}<br>
-  {{alert.issue}}<br>
-  {{alert.location}}<br>
 
-  {{alert.latitude}}, {{alert.longitude}}<br><br>
-{{/each}} -->
+<div class="map-display"></div>
