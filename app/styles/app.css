@@ -9,6 +9,7 @@
 
 header {
   padding-bottom: 0px;
+  padding-left: 20px;
   font-family: 'Asul', sans-serif;
   text-transform: uppercase;
   background-color: #084C8D;
@@ -55,6 +56,9 @@ ul {
     color: white;
     background-color: #62A038;
     text-decoration: none;  }
+
+  div.mapbutton {
+    max-height: 30px;  }
 
 .form {
   background-color: #f9f9f9;
