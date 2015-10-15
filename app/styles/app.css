@@ -92,3 +92,10 @@ form input.submit {
     height: 600px;
     width: 1200px;
   }
+
+ul#alertList  li div {
+    background: url("/img/download.png") .125em .5em no-repeat;
+    background-size: 2em 2em;
+    padding: .25em .25em .25em 1.625em;
+    margin: .25em 0;
+  }
