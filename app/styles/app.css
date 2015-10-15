@@ -108,18 +108,18 @@ ul {
     font-family: 'Asul', sans-serif;
     margin-bottom: 10px;  }
 
-form input.submit {
-    padding: .25em 1.25em .25em 1.25em;
-    border: .05em solid #2e2d2a;
-    background-color: #6db33f;
-    cursor: pointer;
-    color: #fff;
-    font-weight: bold;
-    margin: 0 0 1em 0;
-    float: left;
-}
+.all-blockbuttons {
+  margin-bottom: 10px;
+  margin-top: 10px;}
+
+.newalert {
+  margin-top: 10px;
+  margin-bottom: 10px;}
+
+.showmap {
+  margin-top: 10px;
+  margin-bottom: 10px;}
 
 .map-display {
-    height: 600px;
-    width: 600px;
-  }
+  height: 600px;
+  width: 1200px;}

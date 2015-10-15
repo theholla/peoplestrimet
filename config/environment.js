@@ -6,13 +6,14 @@ module.exports = function(environment) {
     environment: environment,
     contentSecurityPolicy: {
 
-       'default-src': "'none'",
-       'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com https://*.googleapis.com https://*.gstatic.com",
-       'font-src': "'self' https://*.gstatic.com",
-       'connect-src': "'self' wss://*.firebaseio.com https://www.reddit.com/r/*.json http://www.reddit.com/r/*.json",
-       'img-src': "'self' *",
-       'style-src': "'self' 'unsafe-inline' https://*.googleapis.com",
-       'frame-src': "'self' https://*.firebaseio.com"
+      'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com",
+    'default-src': "'none'",
+    'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com https://*.googleapis.com https://*.gstatic.com",
+    'font-src': "'self' https://*.gstatic.com",
+    'connect-src': "'self' wss://*.firebaseio.com",
+    'img-src': "'self' *",
+    'style-src': "'self' 'unsafe-inline' https://*.googleapis.com",
+    'frame-src': "'self' https://*.firebaseio.com"
 
       },
     firebase: 'https://peoples-trimet.firebaseio.com/',

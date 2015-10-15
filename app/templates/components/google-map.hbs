@@ -1,12 +1,8 @@
-<div class="button pointer mapbutton" {{action "showMap" alert}}>
-  Show Map
+<div class="showmap">
+  {{#if showMap}}
+    <div class="button pointer" {{action "hideMap" alerts}}>Hide Map</div>
+  {{else}}
+    <div class="button cursor" {{action "showMap" alerts}}>Show Map</div>
+  {{/if}}
   <div class="map-display"></div>
 </div>
-
-<!-- {{#each alerts as |alert|}}
-  {{alert.line}}<br>
-  {{alert.issue}}<br>
-  {{alert.location}}<br>
-
-  {{alert.latitude}}, {{alert.longitude}}<br><br>
-{{/each}} -->

@@ -1,16 +1,4 @@
-
-<!-- <iframe src="http://mapmash.googlepages.com/pdxmax.html" style="border:0px; width:800px; height:400px"></iframe> -->
 {{line-display yellowalerts=model.yellowalerts greenalerts=model.greenalerts redalerts= model.redalerts bluealerts=model.bluealerts orangealerts=model.orangealerts}}
 
-<hr>
-
-{{google-map alerts=model}}
 {{new-alert stops=model.maxstops saveAlert="saveAlert"}}
-
-
-<hr>
-
-
-{{#each model.alerts as |alert|}}
-{{alert-tile alert=alert}}
-{{/each}}
+{{google-map alerts=model.alerts}}

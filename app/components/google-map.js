@@ -2,19 +2,22 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   map: Ember.inject.service('google-map'),
+  inputtedAddress: "portland, oregon",
 
   actions: {
     showMap(alerts) {
-      var bounds = new google.maps.LatLngBounds();
-      var container = this.$('.map-display')[0];
+      this.set('showMap', true);
+
+      var container = this.$('.map-display')[0];//map container to hold the map
       var options = {
-        center: this.get('map').center(45.5200, -122.6819),
+        center: this.get('map').center(45.5434085,-122.6544225),
+
       };
 
       var myMap = this.get('map').findMap(container, options);
 
       var geocoder = new google.maps.Geocoder();
-      var address = "beaverton";
+      var address = this.get('inputtedAddress');
 
       geocoder.geocode( { 'address': address }, function(results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
@@ -22,32 +25,30 @@ export default Ember.Component.extend({
           var long=results[0].geometry.location.lng();
 
           myMap.setCenter(new google.maps.LatLng(lat, long));
-          // myMap.center(lat, long);
+          myMap.setZoom(11);
         } else {
           alert("Geocode was not successful for the following reason: " + status);
         }
       });
 
-      for (var i = 0; i < this.alerts.get('length'); i++) {
-
-        var myAlert = this.alerts.objectAt(i);
-        var text = '<b>' + myAlert.get('stop') + '</b><br>' + myAlert.get('line');
+      for (var i = 0; i < alerts.get('length'); i++) {
+        var myAlert = alerts.objectAt(i);
+        var text = '<b>' + myAlert.get('line') + '</b><br>' + myAlert.get('issue');
         var lat = myAlert.get('latitude');
         var lng = myAlert.get('longitude');
         var lastOpened;
-
         var infowindow = new google.maps.InfoWindow({
           content: text,
-          maxWidth: 200
+          maxWidth: 300
         });
 
         var marker = new google.maps.Marker({
           position: new google.maps.LatLng(lat, lng),
           map: myMap,
+          icon: 'http://maps.google.com/mapfiles/kml/pal3/icon33.png',
           infowindow: infowindow
         });
-
-        bounds.extend(marker.getPosition());
+        marker.setMap(myMap);
 
         google.maps.event.addListener(marker, 'click', function() {
           // Only open one infowindow at a time
@@ -57,10 +58,10 @@ export default Ember.Component.extend({
           this.infowindow.open(myMap, this);
           lastOpened = this.infowindow;
         });
-        myMap.fitBounds(bounds);
-
-      } // closes for loop
-    } // closes showMap
-
-  } // closes action
+      }
+    },
+    hideMap(alerts) {
+      this.set('showMap', false);
+    }
+  }
 });

@@ -10,7 +10,8 @@ export default Ember.Route.extend({
 
     return Ember.RSVP.hash({
       alerts: this.store.findAll('alert', {
-        orderBy: 'line'
+        orderBy: 'line',
+        orderBy: 'time_added'
         }),
       maxstops: stops.find().then(function(data) {
         return data.filterBy('location_type', '1');

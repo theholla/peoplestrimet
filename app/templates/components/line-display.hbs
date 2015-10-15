@@ -1,12 +1,14 @@
+<div class="all-blockbuttons">
   <div class="blockbutton pointer red" {{action 'viewRed'}}> Red Line Alerts</div>
   <div class="blockbutton pointer orange" {{action 'viewOrange'}}> Orange Line Alerts</div>
   <div class="blockbutton pointer yellow" {{action 'viewYellow'}}> Yellow Line Alerts</div>
   <div class="blockbutton pointer green" {{action 'viewGreen'}}> Green Line Alerts</div>
   <div class="blockbutton pointer blue" {{action 'viewBlue'}}> Blue Line Alerts</div>
+</div>
 
 {{#if viewLine}}
-{{#each activeLine as |alert|}}
-{{alert-tile alert=alert}}
+  {{#each activeLine as |alert|}}
+    {{alert-tile alert=alert}}
 {{/each}}
-<button {{action 'hideAlerts'}}>Hide</button>
+<div class="button pointer" {{action 'hideAlerts'}}>Hide</div>
 {{/if}}

@@ -1,10 +1,15 @@
 {
-  "alerts": [{
+  "alerts":
+  [
+    {
   "line": "yellow",
   "issue": "Lots of trash on the ground",
   "time": "Today at 11:14 AM",
   "active": true,
   "location": "Union Station",
   "comments": ["Yea, I saw it too","Its not that bad","There is a doritos bag"]
-}]
+
+
+   }
+ ]
 }
