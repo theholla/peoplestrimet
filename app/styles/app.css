@@ -132,3 +132,7 @@ ul#alertList  li div {
     padding: .25em .25em .25em 1.625em;
     margin: .25em 0;
   }
+
+#main {
+  margin-top: 3.75em;
+}
