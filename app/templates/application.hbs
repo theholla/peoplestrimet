@@ -1,28 +1,24 @@
 <header>
-  <nav class="mast-wrapper wrapper">
-    <div class="mast-logo">
-      <h2 class="logo">
-        {{#link-to 'index'}}People's TriMet{{/link-to}}
-      </h2>
-    </div>
+  <nav class="header">
     <div class="navbar">
-      <ul class="nav nav-pills right">
-        <li class="nav nav-pills">
-          {{#link-to 'index'}}About{{/link-to}}
+      {{#link-to 'index'}}
+      <span class="headerlink"><h2>People's TriMet</h2></span>{{/link-to}}
+      <ul class="right">
+        <li>
+          {{#link-to 'index'}}<span class="headerlink">About</span>{{/link-to}}
         </li>
-        <li class="nav nav-pills">
-          {{#link-to 'index'}}Contact{{/link-to}}
+        <li>
+          {{#link-to 'index'}}<span class="headerlink">Contact</span>{{/link-to}}
         </li>
-
       </ul>
     </div>
   </nav>
 </header>
 
 <body>
-<div class="container">
-  {{outlet}}
-</div>
+  <div class="container">
+    {{outlet}}
+  </div>
 </body>
 
 <footer>
