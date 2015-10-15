@@ -28,3 +28,8 @@ form input.submit {
     margin: 0 0 1em 0;
     float: left;
 }
+
+.map-display {
+    height: 600px;
+    width: 600px;
+  }

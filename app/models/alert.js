@@ -9,4 +9,5 @@ export default DS.Model.extend({
   time_added: DS.attr(),
   latitude: DS.attr(),
   longitude: DS.attr()
+
 });
