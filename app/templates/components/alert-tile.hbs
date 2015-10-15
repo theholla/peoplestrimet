@@ -1,6 +1,6 @@
-
-{{#link-to 'alert' alert.id}}{{alert.line}}: {{/link-to}}<br>
-<b>Alert:</b> {{alert.issue}}<br>
-<b>Posted on:</b> {{alert.time_added}}<br>
-<b>Stop:</b> {{alert.location}}
-<hr>
+<div class="alert-tile">
+  {{#link-to 'alert' alert.id}}{{alert.line}}: {{/link-to}}<br>
+  <b>Alert:</b> {{alert.issue}}<br>
+  <b>Posted on:</b> {{alert.time_added}}<br>
+  <b>Stop:</b> {{alert.location}}
+</div>

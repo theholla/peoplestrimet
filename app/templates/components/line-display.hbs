@@ -7,8 +7,11 @@
 </div>
 
 {{#if viewLine}}
+  <div class="view-line">
+  <div class="view-line-header">{{alert.line}}</div>
   {{#each activeLine as |alert|}}
-    {{alert-tile alert=alert}}
-{{/each}}
-<div class="button pointer" {{action 'hideAlerts'}}>Hide</div>
+    <div id="alert">{{alert-tile alert=alert}}</div>
+  {{/each}}
+    <div class="button pointer" {{action 'hideAlerts'}}>x</div>
+  </div>
 {{/if}}

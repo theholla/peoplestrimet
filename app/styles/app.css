@@ -16,6 +16,7 @@ header {
   position: relative;
   display: block;
   width: 100%;
+  height: 100px;
   }
 
   .headerlink {
@@ -88,11 +89,30 @@ ul {
   background-color: #D25D13;
 }
 
-  div.mapbutton {
-    max-height: 30px;  }
+.view-line {
+  background-color: #E0E0E0;
+  border: 2px solid grey;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 100%;}
+
+  .view-line .button {
+    background-color: #F9F9F9;
+    color: #D31F43;
+    width: 30px; }
+
+  .view-line .button:hover {
+    background-color: #C9C9C9;
+  }
+
+#alert {
+  padding: 8px;
+}
 
 .form {
-  background-color: #f9f9f9;
+  background-color: #F9F9F9;
   border: 2px solid #73b844;
   padding: 20px;
   margin: 20px;
@@ -121,9 +141,8 @@ ul {
   margin-bottom: 10px;}
 
 .map-display {
-
-    height: 600px;
-    width: 1200px;
+    height: 500px;
+    width: 100%;
   }
 
 ul#alertList  li div {
