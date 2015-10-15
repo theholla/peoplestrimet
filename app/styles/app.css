@@ -48,7 +48,7 @@ ul {
   font-family: 'Asul', sans-serif;
   color: white;
   background-color: #73b844;
-  border-radius: 8px;
+  border-radius: 2px;
   border: 1px solid grey;
   font-size: 20px;}
 
@@ -56,6 +56,37 @@ ul {
     color: white;
     background-color: #62A038;
     text-decoration: none;  }
+
+.blockbutton {
+  text-align: center;
+  font-family: 'Asul', sans-serif;
+  font-size: 15px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.red {
+  background-color: #D31F43;
+}
+
+.blue {
+  background-color: #0F6AAC;
+}
+
+.green {
+  background-color: #028953;
+}
+
+.yellow {
+  background-color: #FFC524;
+}
+
+.orange {
+  background-color: #D25D13;
+}
 
   div.mapbutton {
     max-height: 30px;  }
@@ -77,18 +108,20 @@ ul {
     font-family: 'Asul', sans-serif;
     margin-bottom: 10px;  }
 
-form input.submit {
-    padding: .25em 1.25em .25em 1.25em;
-    border: .05em solid #2e2d2a;
-    background-color: #6db33f;
-    cursor: pointer;
-    color: #fff;
-    font-weight: bold;
-    margin: 0 0 1em 0;
-    float: left;
-}
+.all-blockbuttons {
+  margin-bottom: 10px;
+  margin-top: 10px;}
+
+.newalert {
+  margin-top: 10px;
+  margin-bottom: 10px;}
+
+.showmap {
+  margin-top: 10px;
+  margin-bottom: 10px;}
 
 .map-display {
+
     height: 600px;
     width: 1200px;
   }
