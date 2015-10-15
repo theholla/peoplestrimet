@@ -1,0 +1,52 @@
+[
+  {
+    "route_id":90,
+    "direction_id":"0",
+    "direction_name":"To Portland International Airport"
+  },
+  {
+    "route_id":90,
+    "direction_id":"1",
+    "direction_name":"To Beaverton Transit Center"
+  },
+  {
+    "route_id":100,
+    "direction_id":"0",
+    "direction_name":"To Gresham"
+  },
+  {
+    "route_id":100,
+    "direction_id":"1",
+    "direction_name":"To Hillsboro"
+  },
+  {
+    "route_id":190,
+    "direction_id":"0",
+    "direction_name":"To Expo Center"
+  },
+  {
+    "route_id":190,
+    "direction_id":"1",
+    "direction_name":"To Portland City Center"
+  },
+  {
+    "route_id":200,
+    "direction_id":"0",
+    "direction_name":"To Clackamas Town Center"
+  },
+  {
+    "route_id":200,
+    "direction_id":"1",
+    "direction_name":"To Portland City Center/PSU"
+  },
+  {
+    "route_id":290,
+    "direction_id":"0",
+    "direction_name":"To Portland City Center"
+  },
+  {
+    "route_id":290,
+    "direction_id":"1",
+    "direction_name":"To Milwaukie"
+  }
+]
