@@ -4,9 +4,9 @@ export default Ember.Component.extend({
   map: Ember.inject.service('google-map'),
   inputtedAddress: "portland, oregon",
 
-
   actions: {
     showMap(alerts) {
+      this.set('showMap', true);
 
       var container = this.$('.map-display')[0];//map container to hold the map
       var options = {
@@ -59,10 +59,9 @@ export default Ember.Component.extend({
           lastOpened = this.infowindow;
         });
       }
+    },
+    hideMap(alerts) {
+      this.set('showMap', false);
     }
-
-
   }
-
-
 });

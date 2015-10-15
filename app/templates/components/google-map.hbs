@@ -1,4 +1,8 @@
-<button {{action "showMap" alerts}} class="btn btn-sm btn-primary">Show Map</button>
-
-
-<div class="map-display"></div>
+<div class="showmap">
+  {{#if showMap}}
+    <div class="button pointer" {{action "hideMap" alerts}}>Hide Map</div>
+  {{else}}
+    <div class="button cursor" {{action "showMap" alerts}}>Show Map</div>
+  {{/if}}
+  <div class="map-display"></div>
+</div>
