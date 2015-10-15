@@ -1,4 +1,14 @@
 {{line-display yellowalerts=model.yellowalerts greenalerts=model.greenalerts redalerts= model.redalerts bluealerts=model.bluealerts orangealerts=model.orangealerts}}
 
-{{new-alert stops=model.maxstops saveAlert="saveAlert"}}
+
 {{google-map alerts=model.alerts}}
+{{new-alert stops=model.maxstops saveAlert="saveAlert"}}
+
+<hr>
+<ul id="alertList" class="group">
+  <li>
+    {{#each model.alerts as |alert|}}
+    {{alert-tile alert=alert}}
+    {{/each}}
+  </li>
+</ul>
