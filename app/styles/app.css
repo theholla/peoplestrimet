@@ -1,22 +1,81 @@
 
 #main {
-    margin-top: 3.75em;
+  margin-top: 3.75em;
 }
-
-.logo {
-  background-color: #000080;
-  color: white;}
 
 .right {
   float: right;
   margin-right: 98px;}
 
 header {
-  padding-top: 20px;
-  padding-left: 20px;
   padding-bottom: 0px;
+  padding-left: 20px;
   font-family: 'Asul', sans-serif;
-  text-transform: uppercase;}
+  text-transform: uppercase;
+  background-color: #084C8D;
+  position: relative;
+  display: block;
+  width: 100%;
+  }
+
+  .headerlink {
+    color: white;}
+
+  .headerlink:hover {
+    color: orange;
+    background-color: #084C8D;
+    text-decoration: none;  }
+
+ul {
+  list-style-type: none;
+  overflow: hidden;  }
+
+  ul li {
+    display: inline-block;  }
+
+  ul li a {
+    display: inline-block;
+    padding: 10px;}
+
+.pointer {
+  cursor: pointer;}
+
+.button {
+  width: 20%;
+  float: right;
+  margin-right: 1px;
+  text-align: center;
+  font-family: 'Asul', sans-serif;
+  color: white;
+  background-color: #73b844;
+  border-radius: 8px;
+  border: 1px solid grey;
+  font-size: 20px;}
+
+  .button:hover {
+    color: white;
+    background-color: #62A038;
+    text-decoration: none;  }
+
+  div.mapbutton {
+    max-height: 30px;  }
+
+.form {
+  background-color: #f9f9f9;
+  border: 2px solid #73b844;
+  padding: 20px;
+  margin: 20px;
+  max-width: 540px;}
+
+  .formemphasis {
+    font-size: 40px;
+    font-family: 'Asul', sans-serif;
+    margin-bottom: 10px;  }
+
+  .formq {
+    font-size: 30px;
+    font-family: 'Asul', sans-serif;
+    margin-bottom: 10px;  }
 
 form input.submit {
     padding: .25em 1.25em .25em 1.25em;

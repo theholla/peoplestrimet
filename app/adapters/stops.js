@@ -3,7 +3,7 @@ import Ember from 'ember';
 
 export default Ember.Object.extend({
   find: function() {
-    return ajax("/stops.json");
+    return ajax("/maxstops.json");
   }
 
 });

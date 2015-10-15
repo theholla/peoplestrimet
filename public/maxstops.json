@@ -2,6 +2,21 @@
   {
     "stop_id":"landmark-96",
     "stop_code":null,
+    "stop_name":"Choose nearest stop",
+    "stop_desc":"",
+    "stop_lat":45.491513,
+    "stop_lon":-122.801462,
+    "zone_id":"",
+    "stop_url":"",
+    "location_type":"1",
+    "parent_station":"",
+    "direction":"",
+    "position":""
+
+  },
+  {
+    "stop_id":"landmark-96",
+    "stop_code":null,
     "stop_name":"Beaverton TC MAX Station",
     "stop_desc":"",
     "stop_lat":45.491513,

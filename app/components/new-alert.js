@@ -22,7 +22,6 @@ export default Ember.Component.extend({
         location: this.get('selectedStop.stop_name'),
         active: true,
         time_added: moment().format('llll'),
-        comments: [""],
         latitude: this.get('selectedStop.stop_lat'),
         longitude:this.get('selectedStop.stop_lon')
       };
