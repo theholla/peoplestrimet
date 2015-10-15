@@ -15,8 +15,7 @@ header {
   background-color: #084C8D;
   position: relative;
   display: block;
-  width: 100%;
-  }
+  width: 100%;  }
 
   .headerlink {
     color: white;}
@@ -65,28 +64,22 @@ ul {
   letter-spacing: 1px;
   color: white;
   padding-top: 15px;
-  padding-bottom: 15px;
-}
+  padding-bottom: 15px;}
 
 .red {
-  background-color: #D31F43;
-}
+  background-color: #D31F43;}
 
 .blue {
-  background-color: #0F6AAC;
-}
+  background-color: #0F6AAC;}
 
 .green {
-  background-color: #028953;
-}
+  background-color: #028953;}
 
 .yellow {
-  background-color: #FFC524;
-}
+  background-color: #FFC524;}
 
 .orange {
-  background-color: #D25D13;
-}
+  background-color: #D25D13;}
 
   div.mapbutton {
     max-height: 30px;  }
@@ -121,14 +114,11 @@ ul {
   margin-bottom: 10px;}
 
 .map-display {
-
-    height: 600px;
-    width: 1200px;
-  }
+  height: 500px;
+  width: 100%;  }
 
 ul#alertList  li div {
     background: url("/img/download.png") .125em .5em no-repeat;
     background-size: 2em 2em;
     padding: .25em .25em .25em 1.625em;
-    margin: .25em 0;
-  }
+    margin: .25em 0;  }
