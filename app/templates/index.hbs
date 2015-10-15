@@ -2,6 +2,7 @@
 <!-- <iframe src="http://mapmash.googlepages.com/pdxmax.html" style="border:0px; width:800px; height:400px"></iframe> -->
 
 {{google-map alerts=model}}
+{{new-alert stops=model.maxstops saveAlert="saveAlert"}}
 
 
 <br>
@@ -11,6 +12,3 @@
 {{#each model.alerts as |alert|}}
 {{alert-tile alert=alert}}
 {{/each}}
-
-
-{{new-alert stops=model.maxstops saveAlert="saveAlert"}}

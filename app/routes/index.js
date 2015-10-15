@@ -20,7 +20,7 @@ export default Ember.Route.extend({
     },
 
   alertDelay: function(alert) {
-    return delay(7200000).then(function() {
+    return delay(10000).then(function() {
         alert.destroyRecord();
       });
   },
