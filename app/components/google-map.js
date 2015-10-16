@@ -4,17 +4,16 @@ export default Ember.Component.extend({
   map: Ember.inject.service('google-map'),
   inputtedAddress: "portland, oregon",
 
-
-  actions: {
-    showMap(alerts) {
-
+      insertMap: function(alerts) {
       var container = this.$('.map-display')[0];//map container to hold the map
       var options = {
         center: this.get('map').center(45.5434085,-122.6544225),
 
       };
 
-      var myMap = this.get('map').findMap(container, options);
+
+
+      var myMap = this.get('map').findMap(container, options)
 
       var geocoder = new google.maps.Geocoder();
       var address = this.get('inputtedAddress');
@@ -58,11 +57,11 @@ export default Ember.Component.extend({
           this.infowindow.open(myMap, this);
           lastOpened = this.infowindow;
         });
-      }
-    }
+      }}.on('didInsertElement')
 
 
-  }
+
+
 
 
 });
