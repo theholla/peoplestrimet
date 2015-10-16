@@ -9,9 +9,12 @@
 {{#if viewLine}}
   <div class="view-line">
   <div class="view-line-header">{{alert.line}}</div>
-  {{#each activeLine as |alert|}}
-    <div id="alert">{{alert-tile alert=alert}}</div>
-  {{/each}}
+    <ul id="alertList" class="group">
+      <li>{{#each activeLine as |alert|}}
+        <div id="alert">{{alert-tile alert=alert}}</div>
+      {{/each}}
+      </li>
+    </ul>
     <div class="button pointer" {{action 'hideAlerts'}}>x</div>
   </div>
 {{/if}}

@@ -142,12 +142,13 @@ ul {
 
 .map-display {
     height: 500px;
-    width: 100%;
-  }
+    width: 100%;}
 
 ul#alertList  li div {
     background: url("/img/download.png") .125em .5em no-repeat;
     background-size: 2em 2em;
     padding: .25em .25em .25em 1.625em;
-    margin: .25em 0;
-  }
+    margin: .25em 0;}
+
+#main {
+  margin-top: 3.75em;}
