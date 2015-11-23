@@ -4,18 +4,6 @@ import Stopadapter from 'peoples-trimet/adapters/stops';
 
 
 export default Ember.Route.extend({
-  // model: function() {
-  //   var adapter = Routedirectionadapter.create();
-  //   var allroutes = adapter.find();
-  //   var northroutes = allroutes.filter(function(route){
-  //     if(route.direction_id === '0') {
-  //       return true;
-  //     } else {
-  //       return false;
-  //     }
-  //   });
-  //   return northroutes;
-  // }
 
   model() {
     var adapter = Routedirectionadapter.create();
